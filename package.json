@@ -1,0 +1,36 @@
+{
+  "name": "nodeja-crud-api",
+  "version": "1.0.0",
+  "description": "node js server REST Api",
+  "engines": {
+    "node": ">=20.0.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start:prod": "cross-env NODE_ENV=production ts-node --transpile-only src/server.ts",
+    "start:dev": "cross-env NODE_ENV=development nodemon src/server.ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MargaritaRoda/nodeja-crud-api.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MargaritaRoda/nodeja-crud-api/issues"
+  },
+  "homepage": "https://github.com/MargaritaRoda/nodeja-crud-api#readme",
+  "devDependencies": {
+    "@types/uuid": "^9.0.8",
+    "nodemon": "^3.0.3",
+    "ts-node": "^10.9.2",
+    "ts-node-dev": "^2.0.0",
+    "typescript": "^5.3.3",
+    "uuid": "^9.0.1"
+  },
+  "dependencies": {
+    "@types/node": "^20.11.16",
+    "cross-env": "^7.0.3",
+    "dotenv": "^16.4.1"
+  }
+}
