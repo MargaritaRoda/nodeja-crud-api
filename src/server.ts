@@ -17,17 +17,17 @@ const routes = [
   { re: /^\/api\/users$/, method: "GET", handler: getAllUsers },
   { re: /^\/api\/users$/, method: "POST", handler: addNewUser },
   {
-    re: /^\/api\/users\/(?<user_id>\w+)$/,
+    re: /^\/api\/users\/(?<user_id>[\w-]+)$/,
     method: "GET",
     handler: getUserById,
   },
   {
-    re: /^\/api\/users\/(?<user_id>\w+)$/,
+    re: /^\/api\/users\/(?<user_id>[\w-]+)$/,
     method: "PUT",
     handler: updateUserProperty,
   },
   {
-    re: /^\/api\/users\/(?<user_id>\w+)$/,
+    re: /^\/api\/users\/(?<user_id>[\w-]+)$/,
     method: "DELETE",
     handler: deleteUserById,
   },
